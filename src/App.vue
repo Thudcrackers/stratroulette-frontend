@@ -1,17 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Strat title="Pro Strat" text="Yo this strat is so pro" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Strat from './components/Strat.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Strat
+  },
+  data() {
+    return {
+      strat: {
+        title: String,
+        text: String
+      }
+    }
   }
 }
 </script>
